@@ -2321,7 +2321,7 @@ class AsyncAppSearch(BaseClient):
         engine_name: str,
         query: str,
         analytics: t.Optional[t.Mapping[str, t.Any]] = None,
-        boost: t.Optional[t.Mapping[str, t.Any]] = None,
+        boosts: t.Optional[t.Mapping[str, t.Any]] = None,
         current_page: t.Optional[int] = None,
         facets: t.Optional[t.Mapping[str, t.Any]] = None,
         filters: t.Optional[t.Mapping[str, t.Any]] = None,
@@ -2341,7 +2341,7 @@ class AsyncAppSearch(BaseClient):
         :param engine_name: Name of the engine
         :param query:
         :param analytics:
-        :param boost:
+        :param boosts:
         :param current_page:
         :param facets:
         :param filters:
@@ -2431,7 +2431,7 @@ class AsyncAppSearch(BaseClient):
         engine_name: str,
         query: str,
         analytics: t.Optional[t.Mapping[str, t.Any]] = None,
-        boost: t.Optional[t.Mapping[str, t.Any]] = None,
+        boosts: t.Optional[t.Mapping[str, t.Any]] = None,
         current_page: t.Optional[int] = None,
         facets: t.Optional[t.Mapping[str, t.Any]] = None,
         filters: t.Optional[t.Mapping[str, t.Any]] = None,
@@ -2451,7 +2451,7 @@ class AsyncAppSearch(BaseClient):
         :param engine_name: Name of the engine
         :param query:
         :param analytics:
-        :param boost:
+        :param boosts:
         :param current_page:
         :param facets:
         :param filters:
