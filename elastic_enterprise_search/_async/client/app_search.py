@@ -2360,8 +2360,8 @@ class AsyncAppSearch(BaseClient):
             __body["query"] = query
         if analytics is not None:
             __body["analytics"] = analytics
-        if boost is not None:
-            __body["boost"] = boost
+        if boosts is not None:
+            __body["boosts"] = boosts
         if current_page is not None:
             __body.setdefault("page", {})
             __body["page"]["current"] = current_page
@@ -2470,8 +2470,8 @@ class AsyncAppSearch(BaseClient):
             __body["query"] = query
         if analytics is not None:
             __body["analytics"] = analytics
-        if boost is not None:
-            __body["boost"] = boost
+        if boosts is not None:
+            __body["boosts"] = boosts
         if current_page is not None:
             __body.setdefault("page", {})
             __body["page"]["current"] = current_page
